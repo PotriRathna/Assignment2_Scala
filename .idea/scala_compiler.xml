@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ScalaCompilerConfiguration">
+    <plugins>
+      <plugin path="$USER_HOME$/.jdks/.openjdk-16.0.2.intellij" />
+    </plugins>
+    <profile name="Maven 1" modules="Scala_Assignment2" />
+  </component>
+</project>
