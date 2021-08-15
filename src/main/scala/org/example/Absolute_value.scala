@@ -6,7 +6,10 @@ Input Format
 There are list of integers given in Sample Input. These are the elements of the input array.
 Output Format
 Output the absolute value of integers, each on a separate line.
-
+Test Case :
+List [2, -4, 3, -1, 23, -4, -54]
+Sample Output
+List(2,4,3,1,23,4,54)
  */
 
 object Absolute_value extends App

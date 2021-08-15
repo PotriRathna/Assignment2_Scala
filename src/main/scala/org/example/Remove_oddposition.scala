@@ -1,11 +1,17 @@
+/*
+1.	For a given list with integers, return a new list removing the elements at odd positions.
+ Sample Input
+	List [ 2, 5, 3, 4, 6, 7, 8, 9]
+Sample Output
+5
+4
+7
+9
+
+ */
 package org.example
 
 import scala.language.postfixOps
-
-/*
-1.	For a given list with integers, return a new list removing the elements at odd positions.
- */
-
 object Remove_oddposition extends App{
 
   println("Number of Integers in the List : ")

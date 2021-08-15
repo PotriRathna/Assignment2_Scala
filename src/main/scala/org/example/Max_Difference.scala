@@ -19,7 +19,7 @@ object Max_Difference extends App {
   def difference(array1: Array[Int], i: Int,j:Int, diff:Int): Int = {
     var diff1: Int = diff
     if (i < number - 1) {
-      if (j <= number - 1) {
+      if ((j <= number - 1)&&(j!=i)) {
         diff1 = scala.math.max(diff, array1(i) - array1(j))
         difference(array1, i, j + 1, diff1)
       }

@@ -2,6 +2,9 @@ package org.example
 
 /*
 Count the number of elements in an array without using count, size or length operators (or their equivalents).
+ Test Cases :
+ Sample Input= List[2, 3, 1, 7, 9, 5, 11, 3, 5,3]
+Sample Output: 10
  */
 
 object Count_numbers extends App {
@@ -10,10 +13,8 @@ object Count_numbers extends App {
    countnumber(list,0)
   def countnumber(list1: List[Int],i: Int) :Int =
     {
-      if (list1.apply(i)!=list1.last)
-          countnumber(list1,i+1)
-      else
-        println("Counted Value :" +(i+1))
+      val count = list1.foldLeft(0){(accumulator,list1)=> accumulator+1}
+      println(s"Number of Elements in the List : $count")
       i
     }
 

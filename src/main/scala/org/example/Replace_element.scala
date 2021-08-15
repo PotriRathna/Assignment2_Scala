@@ -3,12 +3,14 @@ package org.example
 /*
 Replace every element with the next greatest element (from right side) in a given array of integers.
 There is no element next to the last element, therefore replace it with -1
-
+Test Cases
+Input  Array [9, 5, 8, 4, -10, 21, 6, 17, 11]
+Output  Array [21, 21, 21, 21, 21, 21, 17, 17, -1]
  */
 
 object Replace_element extends App{
 
-  println("Number of Integers in the List : ")
+  println("Number of Integers in the Array : ")
   val number= scala.io.StdIn.readInt()
   val arr = read(number)
   arr(number-1)= -1

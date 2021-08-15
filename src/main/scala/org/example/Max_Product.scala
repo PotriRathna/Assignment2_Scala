@@ -1,10 +1,12 @@
+/*
+Find maximum product of two integers in a given array of integers.
+Sample Input= Array [2, 3, 1, 7, 9, 5, 11, 3, 5]
+Sample Output: 99
+ */
 package org.example
 
 import scala.annotation.tailrec
 
-/*
-Find maximum product of two integers in a given array of integers.
- */
 object Max_Product extends App{
 
   println("Number of Integers in the Array : ")
@@ -17,7 +19,7 @@ object Max_Product extends App{
 
     var maximum:Int=maxi
     if(i<number-1){
-      if(j<= number-1){
+      if((j<= number-1)&&(j!=i)){
       maximum = scala.math.max(maxi, array1(i) * array1(j))
       product(array1,i,j+1,maximum) }
       else

@@ -2,12 +2,11 @@ package org.example
 
 /*
 Given a list, repeat each element in the list amount of times.
-Input Format : The first line contains the integer where is the number of times you need to repeat the elements.
-The next lines each contain an integer. These are the elements in the array.
-Output Format : each element of the original list times, each on a separate line.
-You have to return the list/vector/array of integers.
-The relative positions of the values should be the same as the original list provided in the input.
-
+Test Case:
+Number of times to repeat an integer  2
+Elements in an Array [1, 2, 3]
+Sample Output
+List(1,1,2,2,3,3)
  */
 
 object Repeat_Integer extends App {
