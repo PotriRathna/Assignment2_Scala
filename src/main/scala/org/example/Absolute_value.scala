@@ -17,16 +17,13 @@ object Absolute_value extends App
   println("Number of Integers in the List : ")
   val number= scala.io.StdIn.readInt()
   var list :List[Int] = read(number)
-  absolute(list,number)
+  println(s"The Absolute Value of the  ${absolute(list)}")
 
   def read(num:Int):List[Int]={
     println("Enter List value : ")
     val array1=new Array[Int](num)
     array1.map(_ => scala.io.StdIn.readInt()).toList
   }
-  def absolute(list1:List[Int],n:Int) : List[Int] =
-    {
-      println(" The Absolute Value of the  " +list1.map(scala.math.abs))
-      list1
-    }
+  def absolute(list1:List[Int]) : List[Int] = list1.map(scala.math.abs)
+
 }

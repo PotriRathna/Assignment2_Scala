@@ -17,22 +17,15 @@ object Remove_oddposition extends App{
   println("Number of Integers in the List : ")
   val number= scala.io.StdIn.readInt()
   var list :List[Int] = read(number)
-  println("Result : ")
-  remove(list,0)
+  println(s"Result : ${remove(list)}")
+
 
   def read(num:Int):List[Int]={
     println("Enter List value : ")
     val array1=new Array[Int](num)
     array1.map(_ => scala.io.StdIn.readInt()).toList
   }
-  def remove(list1:List[Int],x:Int):Int = {
-    if(x<number) {
-      if(x%2==1) {
-        println(list1(x))
-        remove(list1,x+1)
-      }
-    else remove(list1,x+1)
-    }
-    x
-  }
+  def remove(list1:List[Int]):List[Int] =
+    (list1.indices.collect { case i if i % 2 != 0 => list1(i) }).toList
+
 }

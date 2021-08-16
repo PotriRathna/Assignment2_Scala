@@ -15,8 +15,9 @@ object Max_Difference extends App {
   println("Enter value : ")
     val arr=new Array[Int](number)
   println("maximum difference :" + difference(arr.map(_ => scala.io.StdIn.readInt()), 0,1,0))
-@tailrec
-  def difference(array1: Array[Int], i: Int,j:Int, diff:Int): Int = {
+
+  @tailrec
+  def difference(array1: Array[Int], i: Int, j:Int, diff:Int): Int = {
     var diff1: Int = diff
     if (i < number - 1) {
       if ((j <= number - 1)&&(j!=i)) {
@@ -28,6 +29,7 @@ object Max_Difference extends App {
     }
     else
       diff1
+
   }
 }
 

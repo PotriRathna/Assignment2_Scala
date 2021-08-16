@@ -10,12 +10,12 @@ Sample Output: 10
 object Count_numbers extends App {
 
   val list: List[Int] = List(2, 5, 1, 4, 3, 7, 8, 6, 0, 9, 12, -4, -6)
-   countnumber(list,0)
-  def countnumber(list1: List[Int],i: Int) :Int =
+   countnumber(list)
+  def countnumber(list1: List[Int]) :Int =
     {
       val count = list1.foldLeft(0){(accumulator,list1)=> accumulator+1}
       println(s"Number of Elements in the List : $count")
-      i
+      count
     }
 
 }
